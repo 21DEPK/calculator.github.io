@@ -5,29 +5,27 @@
 body{
     background-color: #ddd;
 }
-.main{
-    background : linear-gradient(orange,white,green);
-    height: 80vh;
-    width: 450px;
+.main {
+    background: linear-gradient(orange,white,green);
+    width: 400px;
     margin: 6vh auto;
+    border-radius: 18px;
+    padding: 10px;
     user-select: none;
+} 
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; 
 }
-input{
-    /* direction: rtl; */
+input {
     height: 21%;
     width: 99%;
-    border: 1px solid black;
+    border-radius: 10px 10px 0px 0px;
+    border: 2px solid #0000009e;
     background-color: transparent;
     color: rgba(0, 0, 0, 0.825);
-    /* border: none; */
-    box-shadow: 2px 2px orange,-2px -2px orange;
-    font-size: 2.6rem;
-}
-.row{
-    width: 94%;
-    display: flex;
-    justify-content: flex-end;
-    align-content: flex-end;
+    font-size: 2.0rem;
 }
 button{
     margin: 8px;
