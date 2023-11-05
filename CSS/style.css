@@ -6,11 +6,12 @@ body{
     background-color: #ddd;
 }
 .main {
-    background: linear-gradient(orange,white,green);
+    /* background: url('https://img.freepik.com/free-photo/green-texture_1160-721.jpg'); */
     width: 400px;
     margin: 6vh auto;
     border-radius: 18px;
     padding: 10px;
+    border-radius: 4px;
     user-select: none;
 } 
 .row {
@@ -21,11 +22,12 @@ body{
 input {
     height: 21%;
     width: 99%;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 4px;
     border: 2px solid #0000009e;
     background-color: transparent;
     color: rgba(0, 0, 0, 0.825);
     font-size: 2.0rem;
+    margin-bottom: 2vh;
 }
 button{
     margin: 8px;
