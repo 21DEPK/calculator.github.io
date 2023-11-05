@@ -11,8 +11,8 @@ function updateValue(currentValue){
     document.querySelector('input').value = `${currentValue}`;
 }
 
-window.addEventListener('keypress',(e)=>{
-    key = e.key;
+window.addEventListener('keydown',(event)=>{
+    key = event.key;
     switch(key){
         case '0': currentValue += '0'; updateValue(currentValue);break;
         case '1': currentValue += '1'; updateValue(currentValue);break;
@@ -31,6 +31,8 @@ window.addEventListener('keypress',(e)=>{
         case '*': currentValue += '*'; updateValue(currentValue);break;
         case '(': currentValue += '('; updateValue(currentValue);break;
         case ')': currentValue += ')'; updateValue(currentValue);break;
+        case 'Backspace': currentValue=currentValue.slice(0,currentValue.length-1);updateValue(currentValue);break;
+        case 'Delete':  currentValue='';updateValue(currentValue);break;
         case 'Enter': currentValue = eval(currentValue);updateValue(currentValue);break;
         default: currentValue += '';
     }
